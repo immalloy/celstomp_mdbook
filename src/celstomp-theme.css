@@ -1,0 +1,223 @@
+/* Celstomp Theme - Clean and Simple */
+
+/* Theme Variables */
+:root {
+  /* Base Colors */
+  --bg-color: #0b0e12;
+  --fg-color: #e9eef3;
+  
+  /* Sidebar */
+  --sidebar-bg: #131821;
+  --sidebar-fg: #e9eef3;
+  --sidebar-non-existant: #1e2430;
+  --sidebar-active: #e53935;
+  --sidebar-spacer: #1e2430;
+  
+  /* Scrollbar */
+  --scrollbar: #2a3240;
+  --scrollbar-thumb: #3b4a61;
+  
+  /* Icons */
+  --icons: #9aa7b7;
+  --icons-hover: #e9eef3;
+  
+  /* Links */
+  --links: #8dd1ff;
+  --links-hover: #e53935;
+  --links-visited: #a8d8ff;
+  
+  /* Inline Code */
+  --inline-code-color: #cfe9ff;
+  --inline-code-bg: #1a212c;
+  
+  /* Theme Popup */
+  --theme-popup-bg: #131821;
+  --theme-popup-border: #1e2430;
+  --theme-hover: #233044;
+  
+  /* Tables */
+  --table-border-color: #1e2430;
+  --table-header-bg: #131821;
+  --table-alternate-bg: #0f1319;
+  
+  /* Search */
+  --searchbar-border-color: #1e2430;
+  --searchbar-bg: #1a212c;
+  --searchbar-fg: #e9eef3;
+  --searchresults-border-color: #1e2430;
+  --searchresults-header-fg: #e9eef3;
+  --searchresults-li-bg: #131821;
+  --search-mark-bg: rgba(229, 57, 53, 0.3);
+}
+
+/* Sidebar Styling */
+.sidebar {
+  background-color: var(--sidebar-bg);
+  border-right: 1px solid var(--sidebar-spacer);
+}
+
+.sidebar-scrollbox {
+  background-color: var(--sidebar-bg);
+}
+
+.chapter-item a {
+  color: var(--sidebar-fg);
+}
+
+.chapter-item a:hover {
+  color: var(--links);
+}
+
+.chapter-item a.active {
+  color: var(--sidebar-active);
+  border-left: 3px solid var(--sidebar-active);
+  padding-left: 9px;
+}
+
+.chapter-item .toggle div {
+  background-color: var(--icons);
+}
+
+/* Menu Bar */
+.menu-bar {
+  background-color: var(--sidebar-bg);
+  border-bottom: 1px solid var(--sidebar-spacer);
+}
+
+.menu-bar button {
+  background-color: #1a212c;
+  border: 1px solid #2a3240;
+  color: var(--icons);
+}
+
+.menu-bar button:hover {
+  background-color: #233044;
+  color: var(--fg-color);
+}
+
+/* Search */
+#searchbar {
+  background-color: var(--searchbar-bg);
+  border: 1px solid var(--searchbar-border-color);
+  color: var(--searchbar-fg);
+}
+
+#searchbar:focus {
+  border-color: var(--links);
+}
+
+.searchresults li {
+  background-color: var(--searchresults-li-bg);
+  border: 1px solid var(--searchresults-border-color);
+}
+
+.searchresults li:hover {
+  background-color: #233044;
+}
+
+/* Page Navigation */
+.nav-chapters {
+  background-color: var(--sidebar-bg);
+  border: 1px solid var(--sidebar-spacer);
+  color: var(--fg-color);
+}
+
+.nav-chapters:hover {
+  background-color: #233044;
+  color: var(--sidebar-active);
+}
+
+/* Typography */
+.content h1 {
+  border-bottom: 2px solid var(--sidebar-active);
+}
+
+.content h2 {
+  border-bottom: 1px solid var(--sidebar-spacer);
+}
+
+/* Code Blocks */
+pre {
+  background-color: var(--sidebar-bg);
+  border: 1px solid var(--sidebar-spacer);
+}
+
+code {
+  background-color: var(--inline-code-bg);
+  border: 1px solid var(--sidebar-spacer);
+}
+
+/* Blockquotes */
+blockquote {
+  background-color: var(--sidebar-bg);
+  border-left: 4px solid var(--sidebar-active);
+}
+
+/* Tables */
+table {
+  border: 1px solid var(--table-border-color);
+}
+
+th {
+  background-color: var(--table-header-bg);
+  border-bottom: 2px solid var(--sidebar-spacer);
+}
+
+td {
+  border-bottom: 1px solid var(--table-border-color);
+}
+
+tr:nth-child(even) {
+  background-color: var(--table-alternate-bg);
+}
+
+tr:hover {
+  background-color: #233044;
+}
+
+/* Horizontal Rule */
+hr {
+  border-color: var(--sidebar-spacer);
+}
+
+/* Selection */
+::selection {
+  background-color: rgba(141, 209, 255, 0.3);
+  color: var(--fg-color);
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  background-color: var(--bg-color);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--scrollbar-thumb);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #4a5a75;
+}
+
+/* Theme Popup */
+.theme-popup {
+  background-color: var(--theme-popup-bg);
+  border: 1px solid var(--theme-popup-border);
+}
+
+.theme-popup .theme:hover {
+  background-color: var(--theme-hover);
+}
+
+/* Print Button */
+#print-button {
+  background-color: #1a212c;
+  border: 1px solid #2a3240;
+  color: var(--icons);
+}
+
+#print-button:hover {
+  background-color: #233044;
+  color: var(--fg-color);
+}
