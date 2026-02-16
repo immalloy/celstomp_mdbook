@@ -15,9 +15,9 @@ create-missing = false
 [output.html]
 default-theme = "rust"
 preferred-dark-theme = "rust"
-git-repository-url = "https://github.com/immalloy/celstomp_mdbook"
+git-repository-url = "https://github.com/Celstomp/legacy_celstomp_mdbook"
 
-edit-url-template = "https://github.com/immalloy/celstomp_mdbook/edit/main/src/{path}"
+edit-url-template = "https://github.com/Celstomp/legacy_celstomp_mdbook/edit/main/src/{path}"
 
 [output.html.search]
 enable = true
