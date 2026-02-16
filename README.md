@@ -1,3 +1,6 @@
+> [!CAUTION]
+> **Deprecated / Unmaintained:** This project is no longer maintained and may be broken.
+
 # Celstomp Documentation
 
 This is the comprehensive documentation site for Celstomp, a free browser-based 2D animation tool.
